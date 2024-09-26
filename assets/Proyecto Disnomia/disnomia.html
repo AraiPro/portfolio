@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sitio web oficial de Disnomia Tattoo, tatuajes únicos y personalizados.">
+    <title>Disnomia Tattoo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Menú de Navegación Fijo -->
+    <header id="navbar">
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#acerca">Acerca de Mí</a></li>
+                <li><a href="#portafolio">Portafolio</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#tienda">Tienda</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#idiomas">Idiomas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Inicio -->
+    <section id="inicio">
+        <div class="intro">
+            <h1>Bienvenidos a Disnomia Tattoo</h1>
+            <p>Tatuajes únicos y personalizados blablabla.</p>
+            <div class="instagram-feed">
+                <!-- Aquí se integrará el feed de Instagram -->
+                <p>[Feed en vivo de Instagram]</p>
+                <!-- Código proporcionado por SnapWidget -->
+                <iframe src="https://snapwidget.com/embed/123456" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%;"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Acerca de Mí -->
+    <section id="acerca">
+        <h2>Acerca de Mí</h2>
+        <p>Hola, soy Disnomia, una tatuadora Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur beatae magnam unde ad, vel corporis accusamus laboriosam delectus eos harum at in repudiandae velit ipsa animi. Laborum culpa accusamus ipsa..</p>
+        <h3>Filosofía y Estilo</h3>
+        <p>Estilo propio, diseños personalizados, Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quae voluptate maiores, neque molestias velit, reiciendis dolore laboriosam similique eligendi ducimus ad. Explicabo nulla beatae sint pariatur reiciendis expedita recusandae.</p>
+        <h3>Cualquier cosa</h3>
+        <ul>
+            <li>Una cosa por ejemplo</li>
+            <li>Otra cosa lallaala</li>
+        </ul>
+    </section>
+
+    <!-- Sección Portafolio -->
+    <section id="portafolio">
+        <h2>Portafolio</h2>
+        <div class="portfolio-grid">
+            <!-- Ejemplos de tatuajes destacados -->
+            <div class="portfolio-item">Realismo</div>
+            <div class="portfolio-item">Blackworth</div>
+            <div class="portfolio-item">Puntillismo</div>
+        </div>
+        <h3>Testimonios de Clientes</h3>
+        <p>"Me pinchó muy bien" - Cliente Satisfecho</p>
+    </section>
+
+    <!-- Sección Galería -->
+    <section id="galeria">
+        <h2>Galería</h2>
+        <div class="gallery-grid">
+            <img src="tattoo1.jpg" alt="Tatuaje 1">
+            <img src="tattoo2.jpg" alt="Tatuaje 2">
+            <img src="tattoo3.jpg" alt="Tatuaje 3">
+        </div>
+        <h3>Comparte tu Experiencia</h3>
+        <p>Sube una foto de tu tatuaje y compártela con nosotros.</p>
+    </section>
+
+    <!-- Sección Tienda -->
+    <section id="tienda">
+        <h2>Tienda de Merchandising</h2>
+        <div class="store-grid">
+            <div class="store-item">
+                <h4>Camiseta Disnomia Tattoo</h4>
+                <p>15.00€</p>
+            </div>
+            <div class="store-item">
+                <h4>Taza Disnomia Tattoo</h4>
+                <p>5.00€</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form action="enviar_formulario.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <p>Dirección del Estudio: Calle Falsa 123, Ciudad X</p>
+        <p>Email: info@disnomiatattoo.com | Teléfono: +123456789</p>
+        <div id="mapa">
+        <!-- Mapa interactivo aquí -->
+            <p>[Mapa interactivo]</p>
+            <!-- Inserta el código del mapa aquí -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.344212616123!2d144.9632801153197!3d-37.81421737975113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xe2f3f357bffb20f2!2sCalle+Falsa+123!5e0!3m2!1ses!2s!4v1634080210704!5m2!1ses!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <!-- Sección de Idiomas -->
+    <section id="idiomas">
+        <h2>Idiomas</h2>
+        <p>Elige tu idioma: <a href="#">Español</a> | <a href="#">Inglés</a></p>
+    </section>
+
+    <!-- JavaScript para scroll suave -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
